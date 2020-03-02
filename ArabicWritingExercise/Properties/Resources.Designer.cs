@@ -143,9 +143,9 @@ namespace ArabicWritingExercise.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GHA {
+        internal static System.Drawing.Bitmap GA {
             get {
-                object obj = ResourceManager.GetObject("GHA", resourceCulture);
+                object obj = ResourceManager.GetObject("GA", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,9 +233,9 @@ namespace ArabicWritingExercise.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PELTEK_TA {
+        internal static System.Drawing.Bitmap PELTEK_TE {
             get {
-                object obj = ResourceManager.GetObject("PELTEK_TA", resourceCulture);
+                object obj = ResourceManager.GetObject("PELTEK_TE", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -243,9 +243,19 @@ namespace ArabicWritingExercise.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PELTEK_TE {
+        internal static System.Drawing.Bitmap PELTEK_ZA {
             get {
-                object obj = ResourceManager.GetObject("PELTEK_TE", resourceCulture);
+                object obj = ResourceManager.GetObject("PELTEK_ZA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PELTEK_ZE {
+            get {
+                object obj = ResourceManager.GetObject("PELTEK ZE", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -326,16 +336,6 @@ namespace ArabicWritingExercise.Properties {
         internal static System.Drawing.Bitmap YE {
             get {
                 object obj = ResourceManager.GetObject("YE", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ZA {
-            get {
-                object obj = ResourceManager.GetObject("ZA", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

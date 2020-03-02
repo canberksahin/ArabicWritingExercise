@@ -135,6 +135,7 @@ namespace ArabicWritingExercise
             harfler[27].AlfabePhoto = Resources.YE;
             harfler[27].Tag = "YE";
             #endregion
+
         }
 
         private void btnGetir_Click(object sender, EventArgs e)
@@ -176,6 +177,12 @@ namespace ArabicWritingExercise
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSol_Click(object sender, EventArgs e)
+        {
+            SoluIleBirlesmeyenHarfler frmSol = new SoluIleBirlesmeyenHarfler();
+            frmSol.Show();
         }
     }
 }

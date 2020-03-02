@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using ArabicWritingExercise.Properties;
 
 
 namespace ArabicWritingExercise
@@ -15,31 +16,41 @@ namespace ArabicWritingExercise
 
     public partial class Form1 : Form
     {
-
-        public static string[] straImageLocations = Directory.GetFiles("aa", "*.png", SearchOption.TopDirectoryOnly);
-        Image[] harfler = new Image[straImageLocations.Length];
+        AlfabeFotoListesi[] harfler = new AlfabeFotoListesi[28];
+        //public static string[] straImageLocations = Directory.GetFiles("aa", "*.png", SearchOption.TopDirectoryOnly);
+        //Image[] harfler = new Image[straImageLocations.Length];
         public Form1()
         {
             InitializeComponent();
 
-            for (int i = 0; i < straImageLocations.Length; i++)
+            for (int i = 0; i < harfler.Length; i++)
             {
-                harfler[i] = Image.FromFile(straImageLocations[i]);
-                harfler[i].Tag = i;
+                harfler[i] = new AlfabeFotoListesi();
+                harfler[i].AlfabePhoto = Resources.AYN;
+                harfler[i].Tag = System.Reflection.Assembly.GetExecutingAssembly().GetName().Name;
+
+                //public static Bitmap GetImageByName(string imageName)
+                //{
+                //    System.Reflection.Assembly asm = System.Reflection.Assembly.GetExecutingAssembly();
+                //    string resourceName = asm.GetName().Name + ".Properties.Resources";
+                //    var rm = new System.Resources.ResourceManager(resourceName, asm);
+                //    return (Bitmap)rm.GetObject(imageName);
+
+                //}
             }
         }
 
         private void btnGetir_Click(object sender, EventArgs e)
         {
-            Random rand = new Random();
-            int sayi = rand.Next(1, 28);
-            Random rand1 = new Random();
-            int sayi1 = rand.Next(1, 28);
-            Random rand2 = new Random();
-            int sayi2 = rand.Next(1, 28);
-            button1.BackgroundImage = harfler[sayi];
-            button2.BackgroundImage = harfler[sayi1];
-            button3.BackgroundImage = harfler[sayi2];
+            //Random rand = new Random();
+            //int sayi = rand.Next(1, 28);
+            //Random rand1 = new Random();
+            //int sayi1 = rand.Next(1, 28);
+            //Random rand2 = new Random();
+            //int sayi2 = rand.Next(1, 28);
+            //button1.BackgroundImage = harfler[sayi];
+            //button2.BackgroundImage = harfler[sayi1];
+            //button3.BackgroundImage = harfler[sayi2];
         }
 
         private void btnAlfabe_Click(object sender, EventArgs e)

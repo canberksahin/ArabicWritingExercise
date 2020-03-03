@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnGetir = new System.Windows.Forms.Button();
             this.btnAlfabe = new System.Windows.Forms.Button();
             this.lblHarf1 = new System.Windows.Forms.Label();
@@ -155,6 +156,7 @@
             this.Controls.Add(this.lblHarf1);
             this.Controls.Add(this.btnAlfabe);
             this.Controls.Add(this.btnGetir);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Arapça Yazı Çalışması";
             this.Load += new System.EventHandler(this.Form1_Load);

@@ -31,13 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnGetir = new System.Windows.Forms.Button();
             this.btnAlfabe = new System.Windows.Forms.Button();
-            this.lblHarf1 = new System.Windows.Forms.Label();
-            this.lblHarf3 = new System.Windows.Forms.Label();
-            this.lblHarf2 = new System.Windows.Forms.Label();
             this.btnHarfleriGöster = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.btnSol = new System.Windows.Forms.Button();
             this.txtYazilis = new System.Windows.Forms.TextBox();
             this.btnYazilis = new System.Windows.Forms.Button();
@@ -46,7 +40,7 @@
             // 
             // btnGetir
             // 
-            this.btnGetir.Location = new System.Drawing.Point(236, 202);
+            this.btnGetir.Location = new System.Drawing.Point(12, 182);
             this.btnGetir.Name = "btnGetir";
             this.btnGetir.Size = new System.Drawing.Size(226, 49);
             this.btnGetir.TabIndex = 3;
@@ -56,50 +50,17 @@
             // 
             // btnAlfabe
             // 
-            this.btnAlfabe.Location = new System.Drawing.Point(236, 257);
+            this.btnAlfabe.Location = new System.Drawing.Point(12, 237);
             this.btnAlfabe.Name = "btnAlfabe";
-            this.btnAlfabe.Size = new System.Drawing.Size(95, 38);
+            this.btnAlfabe.Size = new System.Drawing.Size(94, 38);
             this.btnAlfabe.TabIndex = 4;
             this.btnAlfabe.Text = "Alfabe";
             this.btnAlfabe.UseVisualStyleBackColor = true;
             this.btnAlfabe.Click += new System.EventHandler(this.btnAlfabe_Click);
             // 
-            // lblHarf1
-            // 
-            this.lblHarf1.AutoSize = true;
-            this.lblHarf1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblHarf1.Location = new System.Drawing.Point(80, 168);
-            this.lblHarf1.Name = "lblHarf1";
-            this.lblHarf1.Size = new System.Drawing.Size(51, 20);
-            this.lblHarf1.TabIndex = 5;
-            this.lblHarf1.Text = "label1";
-            this.lblHarf1.Visible = false;
-            // 
-            // lblHarf3
-            // 
-            this.lblHarf3.AutoSize = true;
-            this.lblHarf3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblHarf3.Location = new System.Drawing.Point(318, 168);
-            this.lblHarf3.Name = "lblHarf3";
-            this.lblHarf3.Size = new System.Drawing.Size(51, 20);
-            this.lblHarf3.TabIndex = 6;
-            this.lblHarf3.Text = "label2";
-            this.lblHarf3.Visible = false;
-            // 
-            // lblHarf2
-            // 
-            this.lblHarf2.AutoSize = true;
-            this.lblHarf2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblHarf2.Location = new System.Drawing.Point(552, 168);
-            this.lblHarf2.Name = "lblHarf2";
-            this.lblHarf2.Size = new System.Drawing.Size(51, 20);
-            this.lblHarf2.TabIndex = 7;
-            this.lblHarf2.Text = "label3";
-            this.lblHarf2.Visible = false;
-            // 
             // btnHarfleriGöster
             // 
-            this.btnHarfleriGöster.Location = new System.Drawing.Point(337, 257);
+            this.btnHarfleriGöster.Location = new System.Drawing.Point(113, 237);
             this.btnHarfleriGöster.Name = "btnHarfleriGöster";
             this.btnHarfleriGöster.Size = new System.Drawing.Size(125, 38);
             this.btnHarfleriGöster.TabIndex = 8;
@@ -107,39 +68,9 @@
             this.btnHarfleriGöster.UseVisualStyleBackColor = true;
             this.btnHarfleriGöster.Click += new System.EventHandler(this.btnHarfleriGöster_Click);
             // 
-            // button1
-            // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(11, 35);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(212, 130);
-            this.button1.TabIndex = 9;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button3.Location = new System.Drawing.Point(468, 35);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(198, 130);
-            this.button3.TabIndex = 10;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(236, 35);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(226, 130);
-            this.button2.TabIndex = 11;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // btnSol
             // 
-            this.btnSol.Location = new System.Drawing.Point(236, 302);
+            this.btnSol.Location = new System.Drawing.Point(12, 282);
             this.btnSol.Name = "btnSol";
             this.btnSol.Size = new System.Drawing.Size(226, 44);
             this.btnSol.TabIndex = 12;
@@ -149,17 +80,20 @@
             // 
             // txtYazilis
             // 
+            this.txtYazilis.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.txtYazilis.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtYazilis.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtYazilis.Location = new System.Drawing.Point(485, 202);
+            this.txtYazilis.Location = new System.Drawing.Point(258, 271);
             this.txtYazilis.Multiline = true;
             this.txtYazilis.Name = "txtYazilis";
-            this.txtYazilis.Size = new System.Drawing.Size(183, 93);
+            this.txtYazilis.Size = new System.Drawing.Size(232, 93);
             this.txtYazilis.TabIndex = 13;
+            this.txtYazilis.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtYazilis.Visible = false;
             // 
             // btnYazilis
             // 
-            this.btnYazilis.Location = new System.Drawing.Point(236, 353);
+            this.btnYazilis.Location = new System.Drawing.Point(12, 333);
             this.btnYazilis.Name = "btnYazilis";
             this.btnYazilis.Size = new System.Drawing.Size(226, 31);
             this.btnYazilis.TabIndex = 14;
@@ -169,7 +103,7 @@
             // 
             // btnKapat
             // 
-            this.btnKapat.Location = new System.Drawing.Point(236, 352);
+            this.btnKapat.Location = new System.Drawing.Point(12, 332);
             this.btnKapat.Name = "btnKapat";
             this.btnKapat.Size = new System.Drawing.Size(226, 32);
             this.btnKapat.TabIndex = 15;
@@ -182,22 +116,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(680, 396);
+            this.ClientSize = new System.Drawing.Size(493, 396);
             this.Controls.Add(this.btnKapat);
             this.Controls.Add(this.btnYazilis);
             this.Controls.Add(this.txtYazilis);
             this.Controls.Add(this.btnSol);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnHarfleriGöster);
-            this.Controls.Add(this.lblHarf2);
-            this.Controls.Add(this.lblHarf3);
-            this.Controls.Add(this.lblHarf1);
             this.Controls.Add(this.btnAlfabe);
             this.Controls.Add(this.btnGetir);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Arapça Yazı Çalışması";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -208,13 +137,7 @@
         #endregion
         private System.Windows.Forms.Button btnGetir;
         private System.Windows.Forms.Button btnAlfabe;
-        private System.Windows.Forms.Label lblHarf1;
-        private System.Windows.Forms.Label lblHarf3;
-        private System.Windows.Forms.Label lblHarf2;
         private System.Windows.Forms.Button btnHarfleriGöster;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnSol;
         private System.Windows.Forms.TextBox txtYazilis;
         private System.Windows.Forms.Button btnYazilis;

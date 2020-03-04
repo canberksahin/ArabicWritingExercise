@@ -16,13 +16,17 @@ namespace ArabicWritingExercise
 
     public partial class Form1 : Form
     {
-
+        int butonSayisi;
         string[] alfebe = new string[28];
+        Button[] butonlar;
+        Label[] labellar;
 
-        public Form1()
+        public Form1(int ButonSayisi)
         {
-                int j = 0;
+            butonSayisi = ButonSayisi;
+            int j = 0;
             InitializeComponent();
+            this.Width = butonSayisi * 160;
             #region Harfleri Array'e atamak
             //harfler[0] = new AlfabeFotoListesi();
             //harfler[0].AlfabePhoto = Resources.ELİF;
@@ -136,40 +140,57 @@ namespace ArabicWritingExercise
             //harfler[27].AlfabePhoto = Resources.YE;
             //harfler[27].Tag = "YE";
             #endregion
-            for (int i =0x0627; i <= 0x064A ; i++)
+            #region Alfabe
+            for (int i = 0x0627; i <= 0x064A; i++)
             {
-                if (i>= 0x063B && i <=0x0640 || i==0x0649 || i== 0x0629)
+                if (i >= 0x063B && i <= 0x0640 || i == 0x0649 || i == 0x0629)
                 {
                     continue;
                 }
                 alfebe[j] = ((char)i).ToString();
                 j++;
             }
+            #endregion
+            #region Butonları oluştur
+            butonlar = new Button[butonSayisi];
+            labellar = new Label[butonSayisi];
+            txtYazilis.Width = butonSayisi * 50;
+            for (int i = 0; i < butonSayisi; i++)
+            {
+                butonlar[i] = new Button();
+                butonlar[i].Location = new Point(i * 155, 0);
+                butonlar[i].Size = new Size(150, 150);
+                butonlar[i].Font = new Font(butonlar[i].Font.FontFamily, 50);
+                Controls.Add(butonlar[i]);
+                labellar[i] = new Label();
+                labellar[i].Location = new Point(i * 155+60, 152);
+                labellar[i].Size=new Size(50, 20);
+                labellar[i].Font = new Font(labellar[i].Font.FontFamily, 10);
+                labellar[i].Text = "Den";
+                labellar[i].Visible = false;
+                Controls.Add(labellar[i]);
+            }
+            #endregion
+
 
         }
 
         private void btnGetir_Click(object sender, EventArgs e)
         {
+            txtYazilis.Text = "";
             Random rand = new Random();
-            int sayi = rand.Next(1, 28);
-            Random rand1 = new Random();
-            int sayi1 = rand.Next(1, 28);
-            Random rand2 = new Random();
-            int sayi2 = rand.Next(1, 28);
-            //button1.BackgroundImage = harfler[sayi].AlfabePhoto;
-            //lblHarf1.Text = harfler[sayi].Tag;
-            //button2.BackgroundImage = harfler[sayi1].AlfabePhoto;
-            //lblHarf2.Text = harfler[sayi1].Tag;
-            //button3.BackgroundImage = harfler[sayi2].AlfabePhoto;
-            //lblHarf3.Text = harfler[sayi2].Tag;
-
-            button1.Text = alfebe[sayi];
-            button2.Text = alfebe[sayi1];
-            button3.Text = alfebe[sayi2];
-
-            if (txtYazilis.Visible==true)
+            int[] rastgeleler = new int[butonSayisi];
+            for (int i = 0; i < butonSayisi; i++)
             {
-            HarfleriGoster();
+                rastgeleler[i] = rand.Next(1, 28);
+                butonlar[i].Text = alfebe[rastgeleler[i]];
+                txtYazilis.Text = string.Concat(butonlar[i].Text,txtYazilis.Text);
+            }
+            
+
+            if (txtYazilis.Visible == true)
+            {
+                HarfleriGoster();
 
             }
 
@@ -187,16 +208,22 @@ namespace ArabicWritingExercise
         {
             if (btnHarfleriGöster.Text == "Harfleri Göster")
             {
-            lblHarf1.Visible = lblHarf2.Visible = lblHarf3.Visible = true;
-            btnHarfleriGöster.Text = "Harfleri Gizle";
+                for (int i = 0; i < butonSayisi; i++)
+                {
+                    labellar[i].Visible = true;
+                }
+                btnHarfleriGöster.Text = "Harfleri Gizle";
             }
             else
             {
-                lblHarf1.Visible = lblHarf2.Visible = lblHarf3.Visible = false;
+                for (int i = 0; i < butonSayisi; i++)
+                {
+                    labellar[i].Visible = false;
+                }
                 btnHarfleriGöster.Text = "Harfleri Göster";
             }
-           
-            
+
+
         }
 
 
@@ -218,20 +245,18 @@ namespace ArabicWritingExercise
 
         private void HarfleriGoster()
         {
-            txtYazilis.Clear();
-                txtYazilis.Visible = true;
-                txtYazilis.Text = string.Concat(button3.Text + button2.Text + button1.Text);
+            txtYazilis.Visible = true;
             btnKapat.Visible = true;
             btnYazilis.Visible = false;
-            
-            
+
+
 
         }
 
         private void btnKapat_Click(object sender, EventArgs e)
         {
-            
-                btnKapat.Visible = false;
+
+            btnKapat.Visible = false;
 
             btnYazilis.Visible = true;
 

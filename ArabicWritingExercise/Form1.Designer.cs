@@ -36,9 +36,12 @@
             this.lblHarf2 = new System.Windows.Forms.Label();
             this.btnHarfleriGöster = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.btnSol = new System.Windows.Forms.Button();
+            this.txtYazilis = new System.Windows.Forms.TextBox();
+            this.btnYazilis = new System.Windows.Forms.Button();
+            this.btnKapat = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnGetir
@@ -107,29 +110,32 @@
             // button1
             // 
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.Location = new System.Drawing.Point(11, 35);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(212, 130);
             this.button1.TabIndex = 9;
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
-            // 
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.Location = new System.Drawing.Point(468, 35);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(198, 130);
-            this.button2.TabIndex = 10;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // button3
             // 
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.Location = new System.Drawing.Point(236, 35);
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button3.Location = new System.Drawing.Point(468, 35);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(226, 130);
-            this.button3.TabIndex = 11;
+            this.button3.Size = new System.Drawing.Size(198, 130);
+            this.button3.TabIndex = 10;
             this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button2.Location = new System.Drawing.Point(236, 35);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(226, 130);
+            this.button2.TabIndex = 11;
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // btnSol
             // 
@@ -141,14 +147,48 @@
             this.btnSol.UseVisualStyleBackColor = true;
             this.btnSol.Click += new System.EventHandler(this.btnSol_Click);
             // 
+            // txtYazilis
+            // 
+            this.txtYazilis.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtYazilis.Location = new System.Drawing.Point(485, 202);
+            this.txtYazilis.Multiline = true;
+            this.txtYazilis.Name = "txtYazilis";
+            this.txtYazilis.Size = new System.Drawing.Size(183, 93);
+            this.txtYazilis.TabIndex = 13;
+            this.txtYazilis.Visible = false;
+            // 
+            // btnYazilis
+            // 
+            this.btnYazilis.Location = new System.Drawing.Point(236, 353);
+            this.btnYazilis.Name = "btnYazilis";
+            this.btnYazilis.Size = new System.Drawing.Size(226, 31);
+            this.btnYazilis.TabIndex = 14;
+            this.btnYazilis.Text = "Yazılışını Göster";
+            this.btnYazilis.UseVisualStyleBackColor = true;
+            this.btnYazilis.Click += new System.EventHandler(this.btnYazilis_Click);
+            // 
+            // btnKapat
+            // 
+            this.btnKapat.Location = new System.Drawing.Point(236, 352);
+            this.btnKapat.Name = "btnKapat";
+            this.btnKapat.Size = new System.Drawing.Size(226, 32);
+            this.btnKapat.TabIndex = 15;
+            this.btnKapat.Text = "Kapat";
+            this.btnKapat.UseVisualStyleBackColor = true;
+            this.btnKapat.Visible = false;
+            this.btnKapat.Click += new System.EventHandler(this.btnKapat_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(680, 396);
+            this.Controls.Add(this.btnKapat);
+            this.Controls.Add(this.btnYazilis);
+            this.Controls.Add(this.txtYazilis);
             this.Controls.Add(this.btnSol);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnHarfleriGöster);
             this.Controls.Add(this.lblHarf2);
@@ -173,9 +213,12 @@
         private System.Windows.Forms.Label lblHarf2;
         private System.Windows.Forms.Button btnHarfleriGöster;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnSol;
+        private System.Windows.Forms.TextBox txtYazilis;
+        private System.Windows.Forms.Button btnYazilis;
+        private System.Windows.Forms.Button btnKapat;
     }
 }
 

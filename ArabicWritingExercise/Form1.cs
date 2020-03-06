@@ -17,7 +17,7 @@ namespace ArabicWritingExercise
     public partial class Form1 : Form
     {
         int butonSayisi;
-        string[] alfebe = new string[28];
+        string[] alfebe = new string[29];
         Button[] butonlar;
         Label[] labellar;
 
@@ -141,7 +141,7 @@ namespace ArabicWritingExercise
             //harfler[27].Tag = "YE";
             #endregion
             #region Alfabe
-            for (int i = 0x0627; i <= 0x064A; i++)
+            for (int i = 0x0626; i <= 0x064A; i++)
             {
                 if (i >= 0x063B && i <= 0x0640 || i == 0x0649 || i == 0x0629)
                 {

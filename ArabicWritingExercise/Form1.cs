@@ -16,6 +16,7 @@ namespace ArabicWritingExercise
 
     public partial class Form1 : Form
     {
+        string[] yazilislar = new string[28];
         int butonSayisi;
         string[] alfebe = new string[29];
         Button[] butonlar;
@@ -163,30 +164,78 @@ namespace ArabicWritingExercise
                 butonlar[i].Font = new Font(butonlar[i].Font.FontFamily, 50);
                 Controls.Add(butonlar[i]);
                 labellar[i] = new Label();
-                labellar[i].Location = new Point(i * 155+60, 152);
-                labellar[i].Size=new Size(50, 20);
+                labellar[i].Location = new Point(i * 155 + 60, 152);
+                labellar[i].Size = new Size(50, 20);
                 labellar[i].Font = new Font(labellar[i].Font.FontFamily, 10);
-                labellar[i].Text = "Den";
                 labellar[i].Visible = false;
                 Controls.Add(labellar[i]);
+
+                butonlar[i].MouseClick += Form1_MouseClick1;
+
+
             }
             #endregion
+            #region Harflerin Yazılışları
+            yazilislar[0] = "ELİF";
+            yazilislar[1] = "BE";
+            yazilislar[2] = "TE";
+            yazilislar[3] = "P.TE";
+            yazilislar[4] = "CE";
+            yazilislar[5] = "HA";
+            yazilislar[6] = "KHA";
+            yazilislar[7] = "DE";
+            yazilislar[8] = "ZE";
+            yazilislar[9] = "RA";
+            yazilislar[10] = "ZE";
+            yazilislar[11] = "SE";
+            yazilislar[12] = "ŞE";
+            yazilislar[13] = "SA";
+            yazilislar[14] = "DA";
+            yazilislar[15] = "TA";
+            yazilislar[16] = "P.TA";
+            yazilislar[17] = "AYN";
+            yazilislar[18] = "GAYN";
+            yazilislar[19] = "FE";
+            yazilislar[20] = "KA";
+            yazilislar[21] = "KE";
+            yazilislar[22] = "LE";
+            yazilislar[23] = "ME";
+            yazilislar[24] = "NE";
+            yazilislar[25] = "HE";
+            yazilislar[26] = "VA";
+            yazilislar[27] = "YE";
+            #endregion
+
 
 
         }
 
+        private void Form1_MouseClick1(object sender, MouseEventArgs e)
+        {
+            
+            YazımDetay frm = new YazımDetay(((Button)sender).Text);
+            frm.ShowDialog();
+        }
+
+
+
         private void btnGetir_Click(object sender, EventArgs e)
         {
+            int[] rastgeleler = new int[butonSayisi];
             txtYazilis.Text = "";
             Random rand = new Random();
-            int[] rastgeleler = new int[butonSayisi];
             for (int i = 0; i < butonSayisi; i++)
             {
-                rastgeleler[i] = rand.Next(1, 28);
+                rastgeleler[i] = rand.Next(1, 29);
                 butonlar[i].Text = alfebe[rastgeleler[i]];
-                txtYazilis.Text = string.Concat(butonlar[i].Text,txtYazilis.Text);
+                txtYazilis.Text = string.Concat(butonlar[i].Text, txtYazilis.Text);
+                labellar[i].Text = yazilislar[rastgeleler[i] - 1];
+                toolTip1.SetToolTip(butonlar[i], yazilislar[rastgeleler[i] - 1]);
+
+
+
             }
-            
+
 
             if (txtYazilis.Visible == true)
             {
@@ -195,6 +244,7 @@ namespace ArabicWritingExercise
             }
 
         }
+
 
 
 

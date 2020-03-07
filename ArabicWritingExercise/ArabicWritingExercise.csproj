@@ -76,6 +76,12 @@
     <Compile Include="SoluIleBirlesmeyenHarfler.Designer.cs">
       <DependentUpon>SoluIleBirlesmeyenHarfler.cs</DependentUpon>
     </Compile>
+    <Compile Include="YazımDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YazımDetay.Designer.cs">
+      <DependentUpon>YazımDetay.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Alfabe.resx">
       <DependentUpon>Alfabe.cs</DependentUpon>
     </EmbeddedResource>
@@ -97,6 +103,9 @@
     </Compile>
     <EmbeddedResource Include="SoluIleBirlesmeyenHarfler.resx">
       <DependentUpon>SoluIleBirlesmeyenHarfler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YazımDetay.resx">
+      <DependentUpon>YazımDetay.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -206,6 +215,62 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Hopstarter-Flag-Borderless-Turkey.ico" />
+    <None Include="Resources\21.jpg" />
+    <None Include="Resources\20.jpg" />
+    <None Include="Resources\19.jpg" />
+    <None Include="Resources\18.jpg" />
+    <None Include="Resources\17.jpg" />
+    <None Include="Resources\16.jpg" />
+    <None Include="Resources\15.jpg" />
+    <None Include="Resources\14.jpg" />
+    <None Include="Resources\13.jpg" />
+    <None Include="Resources\12.jpg" />
+    <None Include="Resources\11.jpg" />
+    <None Include="Resources\10.jpg" />
+    <None Include="Resources\9.jpg" />
+    <None Include="Resources\8.jpg" />
+    <None Include="Resources\7.jpg" />
+    <None Include="Resources\6.jpg" />
+    <None Include="Resources\5.jpg" />
+    <None Include="Resources\4.jpg" />
+    <None Include="Resources\3.jpg" />
+    <None Include="Resources\2.jpg" />
+    <None Include="Resources\1.jpg" />
+    <None Include="Resources\28.jpg" />
+    <None Include="Resources\27.jpg" />
+    <None Include="Resources\26.jpg" />
+    <None Include="Resources\25.jpg" />
+    <None Include="Resources\24.jpg" />
+    <None Include="Resources\23.jpg" />
+    <None Include="Resources\22.jpg" />
+    <None Include="Resources\20_faa.wav" />
+    <None Include="Resources\19_ghain.wav" />
+    <None Include="Resources\18_ain.wav" />
+    <None Include="Resources\17_zhaa.wav" />
+    <None Include="Resources\16_taah.wav" />
+    <None Include="Resources\15_daad.wav" />
+    <None Include="Resources\14_saad.wav" />
+    <None Include="Resources\13_sheen.wav" />
+    <None Include="Resources\12_seen.wav" />
+    <None Include="Resources\11_zaa.wav" />
+    <None Include="Resources\10_raa.wav" />
+    <None Include="Resources\9_zaal.wav" />
+    <None Include="Resources\8_daal.wav" />
+    <None Include="Resources\7_khaa.wav" />
+    <None Include="Resources\6_haa.wav" />
+    <None Include="Resources\5_jeem.wav" />
+    <None Include="Resources\4_thaa.wav" />
+    <None Include="Resources\3_taa.wav" />
+    <None Include="Resources\2_baa.wav" />
+    <None Include="Resources\1_alif.wav" />
+    <None Include="Resources\28_yaa.wav" />
+    <None Include="Resources\27_waw.wav" />
+    <None Include="Resources\26_haah.wav" />
+    <None Include="Resources\25_noon.wav" />
+    <None Include="Resources\24_meem.wav" />
+    <None Include="Resources\23_laam.wav" />
+    <None Include="Resources\22_kaaf.wav" />
+    <None Include="Resources\21_qaaf.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -49,6 +49,7 @@
             this.ClientSize = new System.Drawing.Size(323, 403);
             this.Controls.Add(this.pboYazımDetay);
             this.Name = "YazımDetay";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "YazımDetay";
             ((System.ComponentModel.ISupportInitialize)(this.pboYazımDetay)).EndInit();
             this.ResumeLayout(false);

@@ -111,10 +111,10 @@ namespace ArabicWritingExercise
                     pboYazımDetay.Image = Properties.Resources._25;
                     break;
                 case 26:
-                    pboYazımDetay.Image = Properties.Resources._27;
+                    pboYazımDetay.Image = Properties.Resources._26;
                     break;
                 case 27:
-                    pboYazımDetay.Image = Properties.Resources._26;
+                    pboYazımDetay.Image = Properties.Resources._27;
                     break;
                 case 28:
                     pboYazımDetay.Image = Properties.Resources._28;

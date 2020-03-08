@@ -28,7 +28,13 @@ namespace ArabicWritingExercise
             int buttonSayisi = (int)nudHarfSayisi.Value;
             Form1 frm = new Form1(buttonSayisi);
             frm.ShowDialog();
-            Close();
+            
+        }
+
+        private void btnSozluk_Click(object sender, EventArgs e)
+        {
+            Sozluk frm = new Sozluk();
+            frm.ShowDialog();
         }
     }
 }

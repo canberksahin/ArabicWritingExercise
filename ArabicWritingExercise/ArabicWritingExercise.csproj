@@ -49,46 +49,65 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Alfabe.cs">
+    <Compile Include="Models\SozlukKelime.cs" />
+    <Compile Include="Sozluk\Sozluk.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Alfabe.Designer.cs">
+    <Compile Include="Sozluk\Sozluk.Designer.cs">
+      <DependentUpon>Sozluk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sozluk\SozlukKelimeDuzeltme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sozluk\SozlukKelimeDuzeltme.Designer.cs">
+      <DependentUpon>SozlukKelimeDuzeltme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YaziCalismasi\Alfabe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YaziCalismasi\Alfabe.Designer.cs">
       <DependentUpon>Alfabe.cs</DependentUpon>
     </Compile>
-    <Compile Include="AlfabeFotoListesi.cs" />
+    <Compile Include="YaziCalismasi\AlfabeFotoListesi.cs" />
     <Compile Include="Baslangic.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Baslangic.Designer.cs">
       <DependentUpon>Baslangic.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="YaziCalismasi\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="YaziCalismasi\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SoluIleBirlesmeyenHarfler.cs">
+    <Compile Include="YaziCalismasi\SoluIleBirlesmeyenHarfler.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SoluIleBirlesmeyenHarfler.Designer.cs">
+    <Compile Include="YaziCalismasi\SoluIleBirlesmeyenHarfler.Designer.cs">
       <DependentUpon>SoluIleBirlesmeyenHarfler.cs</DependentUpon>
     </Compile>
-    <Compile Include="YazımDetay.cs">
+    <Compile Include="YaziCalismasi\YazımDetay.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="YazımDetay.Designer.cs">
+    <Compile Include="YaziCalismasi\YazımDetay.Designer.cs">
       <DependentUpon>YazımDetay.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Alfabe.resx">
+    <EmbeddedResource Include="Sozluk\Sozluk.resx">
+      <DependentUpon>Sozluk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sozluk\SozlukKelimeDuzeltme.resx">
+      <DependentUpon>SozlukKelimeDuzeltme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YaziCalismasi\Alfabe.resx">
       <DependentUpon>Alfabe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Baslangic.resx">
       <DependentUpon>Baslangic.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="YaziCalismasi\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -101,10 +120,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SoluIleBirlesmeyenHarfler.resx">
+    <EmbeddedResource Include="YaziCalismasi\SoluIleBirlesmeyenHarfler.resx">
       <DependentUpon>SoluIleBirlesmeyenHarfler.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="YazımDetay.resx">
+    <EmbeddedResource Include="YaziCalismasi\YazımDetay.resx">
       <DependentUpon>YazımDetay.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -272,5 +291,6 @@
     <None Include="Resources\22_kaaf.wav" />
     <None Include="Resources\21_qaaf.wav" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

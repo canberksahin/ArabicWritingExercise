@@ -112,9 +112,10 @@
             // lblKelimeSayisi
             // 
             this.lblKelimeSayisi.AutoSize = true;
-            this.lblKelimeSayisi.Location = new System.Drawing.Point(316, 32);
+            this.lblKelimeSayisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblKelimeSayisi.Location = new System.Drawing.Point(312, 32);
             this.lblKelimeSayisi.Name = "lblKelimeSayisi";
-            this.lblKelimeSayisi.Size = new System.Drawing.Size(35, 13);
+            this.lblKelimeSayisi.Size = new System.Drawing.Size(46, 17);
             this.lblKelimeSayisi.TabIndex = 7;
             this.lblKelimeSayisi.Text = "label4";
             // 

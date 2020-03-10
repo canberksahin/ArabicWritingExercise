@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Sozluk\KendiniTestEt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sozluk\KendiniTestEt.Designer.cs">
+      <DependentUpon>KendiniTestEt.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\SozlukKelime.cs" />
     <Compile Include="Sozluk\Sozluk.cs">
       <SubType>Form</SubType>
@@ -95,6 +101,9 @@
     <Compile Include="YaziCalismasi\YazımDetay.Designer.cs">
       <DependentUpon>YazımDetay.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Sozluk\KendiniTestEt.resx">
+      <DependentUpon>KendiniTestEt.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Sozluk\Sozluk.resx">
       <DependentUpon>Sozluk.cs</DependentUpon>
     </EmbeddedResource>

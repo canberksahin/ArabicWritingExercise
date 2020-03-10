@@ -36,5 +36,11 @@ namespace ArabicWritingExercise
             Sozluk frm = new Sozluk();
             frm.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            KendiniTestEt frm = new KendiniTestEt();
+            frm.ShowDialog();
+        }
     }
 }
